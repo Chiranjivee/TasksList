@@ -23,6 +23,7 @@ function loadEventListeners() {
 function addTask(e) {
     if (taskInput.value === '') {
         alert('Add a task');
+        return;
     }
 
     createTaskItemAndAppendToList(taskInput.value);
